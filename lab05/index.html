@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Chaerin Sung | Form Page</title>
+
+<style>
+	body {
+		margin: 0px;
+		background-color: #fbf7f0;
+	}
+	h1 {
+		margin: 0px;
+		color: #91af9d;
+		font-size: 10em;
+		text-align: center;
+	}
+	h2 {
+		margin: 0px;
+		color: #686b69;
+		font-size: 5em;
+		text-align: center;
+	}
+	h3 {
+		margin: 25px;
+		color: #fbf7f0;
+		text-align: center;
+		font-size: 50px;
+	}
+	button {
+		padding: 10px 20px;
+	}
+	#header {
+		height: 400px;
+		text-align: center;
+		font-style: oblique;
+		background-color: #fbf7f0;
+		line-height: 180px;
+	}
+	#content {
+		width: 1300px;
+		line-height: 1.5;
+		margin: 0 auto;
+		padding: 20px;
+		background-color: #d9e4dd;
+
+	}
+	#recommendations {
+		width: 30%;
+	}
+	#threeplus {
+		width: 15%;
+	}
+	#form {
+		margin: 0 auto;
+	}
+	#consent {
+		margin-left: 180px;
+	}
+	#submit-btn {
+		margin-left: 180px;
+	}
+	.form-row {
+		margin: 10px 0px;
+	}
+	.main-label {
+		width: 40%;
+		float: left;
+		margin-left: 180px;
+	}
+
+</style>
+
+<body>
+	<div id="header">
+		<h2>Welcome to</h2>
+		<h1>Chaertea</h1>
+	</div>
+	<div id="content">
+		<div id="form">
+		<h3>Order Form</h3>
+			<form action="confirmation.html">
+			<div class="form-row">
+				<label class="main-label" for="name">Name:</label>
+				<input id="name" type="text" placeholder="Enter your name" required/>
+			</div>
+
+			<div class="form-row">
+				<label class="main-label" for="phone">Phone Number:</label>
+				<input id="phone" type="text" placeholder="(___)___-____" required/>
+			</div>
+
+			<div class="form-row">
+				<label class="main-label" for="email">Email (optional):</label>
+				<input id="email" type="email" placeholder="chaertea@gmail.com">
+			</div>
+
+			<div class="form-row">
+				<label class="main-label" for="order">What Would You Like To Order?</label>
+				<select id="order">
+					<option value="Black Milk Tea">Black Milk Tea</option>
+					<option value="Thai Milk Tea">Thai Milk Tea</option>
+					<option value="Taro Milk Tea">Taro Milk Tea</option>
+					<option value="Matcha Milk Tea">Matcha Milk Tea</option>
+				</select>
+			</div>
+
+			<div class="form-row">
+				<label class="main-label">Toppings?</label>
+				<input id="none" type="checkbox" value="None" name="none"><label>None</label>
+				<input id="boba" type="checkbox" value="Boba" name="boba"><label>Boba</label>
+				<input id="lychee" type="checkbox" value="Lychee-Jelly" name="lychee"><label>Lychee Jelly</label>
+			</div>
+
+			<div class="form-row">
+				<label class="main-label">How Many Drinks Are You Ordering?</label>
+				<input id="drinks-1" type="radio" value="1" name="1"><label>1</label>
+				<input id="drinks-2" type="radio" value="2" name="2"><label>2</label>
+				<input id="drinks-3" type="radio" value="3" name="3"><label>3</label>
+				<input id="drinks-more" type="radio" value="More" name="more"><label>More</label>
+			</div>
+
+			<div class="form-row">
+				<label class="main-label" for="3+">If Ordering More Than 3, How Many?</label>
+				<input id="threeplus" type="text" placeholder="If Less, Please Write 'N/A'">
+			</div>
+
+			<div class="form-row">
+				<label class="main-label" for="recommendations">Do You Have Any Recommendations To Add To Our Menu?</label>
+				<textarea id="recommendations" placeholder="Enter your recommendations here..."></textarea>
+			</div>
+
+			<input id="consent" type="checkbox" value="consent" name="consent" required>
+			<label for="consent">
+				<em>Check here to accept terms and conditions</em>
+			</label>
+
+			<div class="form-row">
+				<button id="submit-btn" type="submit">Submit Order</button>
+				<button id="clear-btn" type="clear">Clear</button>
+			</div>
+			</form>
+		</div>
+	</div>
+</body>
+
+</head>
+</html>
