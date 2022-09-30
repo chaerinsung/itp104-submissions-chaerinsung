@@ -1,0 +1,56 @@
+body {
+	background-color: #F2EBE2;
+	font-family: didot;
+	margin: 0 auto;
+}
+
+p {
+	font-size: 15pt;
+}
+
+img {
+	width: 500px;
+	height: auto;
+}
+
+#header {
+	text-align: center;
+	text-shadow: 8px 5px 0px #755e4a;
+	font-size: 30pt;
+	color: #f2ebe2;
+	background-image: url("img/silk.jpeg");
+	background-size: cover;
+	height: 400px;
+	line-height: 400px;
+	margin: 0 auto;
+}
+
+#header h1 {
+	margin-top: 0;
+}
+
+#gallery {
+	text-align: center;
+	width: 800px;
+	background-color: white;
+	height: auto;
+	margin: 0 auto;
+	padding: 50px;
+}
+
+.images {
+	padding-bottom: 10px;
+	opacity: 0.8;
+}
+
+.images:hover {
+	opacity: 1;
+}
+
+.images p {
+	visibility: hidden;
+}
+
+.images:hover p {
+	visibility: visible;
+}
