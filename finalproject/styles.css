@@ -1,0 +1,117 @@
+body {
+	margin: 0 auto;
+}
+#nav-wrapper{
+	z-index:9;
+	position:fixed;
+	top:0px;
+	left:0px;
+	right:0px;
+	height:60px;
+}
+#nav{
+	width:100%;
+	margin-left:auto;
+	margin-right:auto;
+	font-family: sans-serif;
+}	
+#nav ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+#nav li{
+	position:relative;
+	width:200px;
+	float:right;
+	text-align:center;
+	line-height:60px;
+	padding-bottom: 0;
+}
+#nav a{
+	display:block;
+	text-decoration:none;
+	color:#a8a3a0;
+}
+#nav a:hover{
+	color:#1f2020;
+}
+#nav a.active{
+	color:#1f2020;
+}
+#nav ul ul{
+	position:absolute;
+	visibility:hidden;
+	z-index:30;
+}
+#nav ul ul > li {
+	height: 2.6em;
+	line-height: 48px;
+}
+#nav ul li:hover > ul{
+	visibility: visible;
+}
+#text {
+	font-family: sans-serif;
+	font-weight: 600;
+	overflow: hidden;
+	height: 2.6em;
+	width: 100%;
+	position: fixed;
+	left: 3.5%;
+	top: 92%;
+}
+#text ul, li {
+	height: 13.5em;
+	margin: 0px;
+	padding: 0px;
+	width: 100%;
+}
+#text li {
+	list-style-type: none;
+	margin: 0px 0 1px 0;
+	height: 1em;
+	padding: 0px;
+	font-size: 3em;
+	text-transform: uppercase;
+	width: 100%;
+}
+.intro {
+	animation-name: titleflip;
+	animation: titleflip 5s ease-in-out infinite;
+}
+@keyframes titleflip {
+	0%, 20% {
+		transform: translate(0px,-12.50em);
+	}
+	20%, 40% {
+		transform: translate(0px,-9.375em);
+	}
+	40%, 60% {
+		transform: translate(0px,-6.44em);
+	}
+	60%, 80% {
+		transform: translate(0px,-3.44em);
+	}
+	80%, 100% {
+		transform: translate(0px,-0.315em);
+	}
+	100%, 0% {
+		transform: translate(0px,-12.50em);
+	}
+}
+#footer {
+	text-align:center;
+	height:60px;
+	color:#a8a3a0;
+	line-height:60px;
+	position: relative;
+	bottom: 0;
+}
+#footer p {
+	margin:0px;
+	font-family: sans-serif;
+}
+.clearfloat {
+	clear: both;
+}
