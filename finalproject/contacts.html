@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="ITP104 Final Project Contacts">
+	<meta name="keywords" content="ITP104, student, USC, HTML, CSS, web design, web development, portfolio, resume">
+	<meta name="author" content="Chaerin Sung">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Chaerin Sung | Contacts</title>
+
+	<link rel="stylesheet" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+		#profilepic {
+			float: left;
+			text-align: center;
+			width: 35%;
+			height: 60%;
+			overflow: hidden;
+			margin: 0.3em 4.5em 0em;
+		}
+		#profilepic img {
+			height: auto;
+			width: 100%;
+		}
+		#contact {
+			float: left;
+			width: 50%;
+			font-family: 'Roboto', sans-serif;
+			margin: 3em 0em 0em;
+			color: #464646;
+		}
+		#contact h1 {
+			text-align: center;
+			margin-bottom: 1.5em;
+			text-transform: uppercase;
+			font-weight: normal;
+			color: black;
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.7em;
+		}
+		label {
+			font-size: 1.1em;
+		}
+		input, textarea{
+			width:100%;
+			border:none;
+			border-bottom:2.5px solid #bebebe;
+			padding:8px;
+			margin-bottom:20px;
+			font-size:20px;
+			background-color: white;
+		}
+		button {
+			padding: 15px 20px;
+			margin-right:10px;
+			font-size:20px;
+			border-radius:5px;
+			border:none;
+			margin-top:20px;
+			font-size: 1em;
+		}
+		#clear{
+			background-color:#e6d7d2;
+		}
+		#clear:hover{
+			background-color: #91af9d;
+		}
+		#submit{
+			background-color:#1f2020; 
+			color:#f3f3f3;
+		}
+		#submit:hover{
+			background-color:#91af9d;
+		}
+		#content {
+			margin-top: 4.2%;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="nav-wrapper">
+		<div id="nav">
+			<ul>
+				<li><a class="active" href="contacts.html">CONTACTS</a></li>
+				<li><a href="projects.html">PROJECTS</a>
+					<ul>
+						<li><a href="moodboard.html">MOODBOARD</a></li>
+						<li><a href="lookbook.html">LOOKBOOK</a></li>
+					</ul>
+				</li>
+				<li><a href="resume.html">RESUME</a></li>
+				<li><a href="index.html">HOME</a></li>
+			</ul>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+
+	<div class="clearfloat"></div>
+
+	<div id="content">
+		<div id="profilepic">
+			<div class="contactpic">
+				<img src="img/me.png" alt="Picture of me">
+			</div>
+		</div>
+		<form action="confirmation.html">
+			<div id="contact">
+				<h1>Ask me questions, give me feedback, or say hi</h1>
+				<div class="form-row">
+					<label for="firstname" class="main-label">First name</label>
+					<input id="firstname" type="text" required>
+				</div>
+				<div class="form-row">
+					<label for="lastname" class="main-label">Last name</label>
+					<input id="lastname" type="text" required>
+				</div>
+				<div class="form-row">
+					<label for="email" class="main-label">Email</label>
+					<input id="email" type="email" required>
+				</div>
+				<div class="form-row">
+					<label for="number" class="main-label">Phone Number (optional)</label>
+					<input id="number" type="text">
+				</div>
+				<div class="form-row">
+					<label for="message" class="main-label">Comments</label>
+					<textarea id="message"></textarea>
+				</div>
+				<div class="form-row">
+					<button type="reset" id="clear">Clear</button>
+					<button type="submit" id="submit">Submit</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</body>
+
+</html>

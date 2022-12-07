@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="ITP104 Final Project Resume">
+	<meta name="keywords" content="ITP104, student, USC, HTML, CSS, web design, web development, portfolio, resume">
+	<meta name="author" content="Chaerin Sung">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Chaerin Sung | Resume</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		@font-face {
+			font-family: "bold";
+			src: url("fonts/Bold.ttf");
+		}
+		#nav-wrapper {
+			position: relative;
+			top:0px;
+			left:0px;
+			right:0px;
+			height:60px;
+		}
+		#header {
+			height: 100vh;
+			width: auto;
+		}
+		#header h1 {
+			display: inline-flex;
+			text-align: center;
+			margin-top: 0.35em;
+			margin-left: 1.2em;
+			font-size: 10rem;
+			font-family: "bold", sans-serif;
+			--s: 0.1em;   /* the thickness of the line */
+  			--c: #91af9d; /* the color */
+  			color: #0000;
+  			padding-bottom: var(--s);
+  			background: 
+			    linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
+			    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+  				-webkit-background-clip: text,padding-box;
+          	background-clip: text,padding-box;
+  			transition: 0.5s;
+		}
+		#header h1:hover {
+			--_p: 100%
+		}	
+		
+		#content {
+			height: 100vh;
+			overflow-x: hidden;
+			overflow-y: auto;
+			perspective: 2px;
+		}
+
+		#resume {
+			width: 75em;
+			margin: 0 auto;
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			text-align: center;
+		}
+		section {
+			transform-style: preserve-3d;
+			position: relative;
+			color: white;
+		}
+
+		.no-parallax {
+			height: 100vh;
+			background-color: #111;
+			z-index: 999;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		section h1 {
+			text-align: center;
+			font-size: 4rem;
+			font-family: sans-serif;
+		}
+
+		.parallax p {
+			font-family: sans-serif;
+			font-size: 1.5em;
+			text-align: center;
+			margin: 0 auto;
+		}
+
+		.la a {
+			color: white;
+		}
+
+		.objective {
+			padding-top: 1em;
+			text-align: left;
+		}
+
+		h3 {
+			font-family: sans-serif;
+			text-align: center;
+			font-size: 2em;
+		}
+
+		.parallax h1 {
+			margin: 0 auto;
+			width: 60%;
+			font-size: 2rem;
+		}
+
+		.parallax::after {
+			content: " ";
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			transform: translateZ(-1px) scale(1.5);
+			background-size: 100%;
+			z-index: -1;
+		}
+
+		.bg::after {
+			background-color: #91af9d;
+		}
+
+		@media screen and (min-width: 768px) {
+			section h1 {
+				font-size: 8rem;
+			}
+			.parallax h1 {
+			    font-size: 4rem;
+			}
+		}
+		
+		#resume h1 {
+			font-size: 2.5rem;
+			padding-top: 0.7em;
+			color: #e0e5d8;
+		}
+		#resume ul {
+			display: inline-block;
+			font-family: sans-serif;
+			font-size: 1.5em;
+			margin: 0 auto;
+			padding: 0;
+			text-align: center;
+		}
+		#resume li {
+			height: 1em;
+			text-align: left;
+		}
+		.education {
+			margin: 0;
+			padding: 0;
+		}
+		.experience {
+			text-align: left;
+		}
+		.experience p {
+			text-align: left;
+			margin-top: 1em;
+			margin-bottom: 0.5em;
+		}
+		.experience strong {
+			font-size: 1.25em;
+		}
+		.experience li{
+			text-align: left;
+		}
+		.dates {
+			float: right;
+		}
+		.edu1 {
+			float: left;
+			width: 35em;
+			margin-right: 0;
+			padding-right: 0;
+		}
+		.edu2 {
+			float: left;
+			width: 40em;
+		}
+		.programming {
+			float: left;
+			margin-right: 4.95em;
+		}
+		.design {
+			float: left;
+			margin-right: 4.95em;
+		}
+		.certification {
+			float: left;
+		}
+		.chaerin h1 {
+			text-shadow: 3px 3px #565c4c;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<div id="nav-wrapper">
+			<div id="nav">
+				<ul>
+					<li><a href="contacts.html">CONTACTS</a></li>
+					<li><a href="projects.html">PROJECTS</a>
+						<ul>
+							<li><a href="moodboard.html">MOODBOARD</a></li>
+							<li><a href="lookbook.html">LOOKBOOK</a></li>
+						</ul>
+					</li>
+					<li><a class="active" href="resume.html">RESUME</a></li>
+					<li><a href="index.html">HOME</a></li>
+				</ul>
+				<div class="clearfloat"></div>
+			</div>
+		</div>
+	
+		<h1>Chaerin Sung</h1>
+	
+	</div>
+
+	<div id="content">
+		<div id="parallax">
+			<section class="no-parallax">
+			    <h1>Resume</h1>
+			</section>
+			<section class="parallax bg">
+				<div id="resume">
+					<div class="chaerin">
+						<h1>CHAERIN SUNG</h1>
+					</div>
+					<p class="la">
+						Los Angeles, CA
+						<br>(818) 835-7038
+						<br><a href="mailto:chaerin@usc.edu">chaerin@usc.edu</a>
+						<br><a href="https://www.linkedin.com/in/chaerinsung/" target="_blank">linkedin</a> 
+					</p>
+
+					<h1>Objective</h1>
+					<p class="objective">To obtain an internship where I can expand my skills in web development and use those skills to contribute to the workplace in a positive manner to help the company succeed.</p>
+
+						<h1>Education</h1>
+							<div class="edu1">
+							<h3>University of Southern California</h3>
+								<ul class="education">
+									<li>Bachelors in Cognitive Science</li>
+									<li>Minoring in Web Development</li>
+									<li>3.9 GPA</li>
+									<li>USC Dean's List</li>
+									<li>Questbridge Finalist</li>
+									<li>Graduating in May 2024</li>
+								</ul>
+							</div>
+							<div class="edu2">
+								<h3>Grover Cleveland Charter High School</h3>
+									<ul>
+										<li>CORE Magnet Program</li>
+										<li>Valedictorian</li>
+										<li>4.7 GPA</li>
+										<li>California Scholarship Federation - Highest Honor</li>
+										<li>Graduated June 2020</li>
+									</ul>
+							</div>
+					<div class="clearfloat"></div>
+
+					<h1>Experience</h1>
+						<div class="experience">
+							<p><strong>IT and Clinical Assistant</strong>
+								<br><em>US Radiology On-Call</em>
+								<span class="dates">June 2022 - Present</span>
+							</p>
+							<ul>
+								<li>Accessed multiple desks at one time through AnyDesk</li>
+								<li>Regularly assisted hospitals and doctors across the nation</li>
+								<li>Troubleshooted when technological problems arose</li>
+							</ul>
+
+							<p><strong>Visual Arts and Media Intern</strong>
+								<br><em>KCM</em>
+								<span class="dates">August 2021 - Present</span>
+							</p>
+							<ul>
+								<li>Creatively worked with Procreate, Adobe Illustrator and Photoshop, and Canva</li>
+								<li>Designed multiple graphics a week and explored typography and calligraphy</li>
+								<li>Managed social media</li>
+							</ul>
+
+							<p><strong>Customer Relations Manager</strong>
+								<br><em>Village Cleaners</em>
+								<span class="dates">May 2022 - June 2022</span>
+							</p>
+							<ul>
+								<li>Kept accurate and detailed records of customers and their clothing</li>
+								<li>Processed orders into the system, bagged and delivered clothing</li>
+								<li>Provided an elevated customer experience to generate a loyal clientele</li>
+							</ul>
+
+							<p><strong>Barista, Customer Relations</strong>
+								<br><em>Sharetea Northridge</em>
+								<span class="dates">January 2021 - August 2021s</span>
+							</p>
+							<ul>
+								<li>Made and served 400+ beverages a day with speed, quality, and consistency</li>
+								<li>Memorized recipes for at least 50 beverages</li>
+								<li>engendered customer loyalty by remembering personal references and regular orders</li>
+								<li>Trained new team members with positive reinforcement and respectful, encouraging coaching</li>
+							</ul>
+
+							<p><strong>Intern</strong>
+								<br><em>Child Development Institute</em>
+								<span class="dates">January 2018 - January 2020</span>
+							</p>
+							<ul>
+								<li>Trained in early development and family engagement and engaged with families</li>
+								<li>Utilized individual skills and interests to support young children and serve families</li>
+								<li>Helped families understand their child's individual needs by facilitating developmental screenings</li>
+							</ul>
+
+								<p><strong>Summer Intern</strong>
+								<br><em>Korean Family American Services (KFAM)</em>
+								<span class="dates">June 2019 - August 2019</span>
+							</p>
+							<ul>
+								<li>Worked with websites, social media, graphic design, illustration, writing, and Korean-English translation</li>
+								<li>Wrote articles that pertained to cultural-specific education and outreach</li>
+								<li>Created a safe environment for the children of parents in clinical sessions</li>
+								<li>Facilitated therapeutic sessions</li>
+							</ul>
+
+								<p><strong>Campaigner, Translator</strong>
+								<br><em>John Lee City Council</em>
+								<span class="dates">November 2018 - August 2019</span>
+							</p>
+							<ul>
+								<li>Assisted staff with field operations, mass mailings, phone banking, telecampaigning, and general office duties</li>
+								<li>Canvassed door-to-door</li>
+								<li>In charge of translating for Korean families, especially elders</li>
+							</ul>
+
+								<p><strong>Summer Intern</strong>
+								<br><em>Korean Church Coalition for North Korean Freedom</em>
+								<span class="dates">January 2018 - January 2020</span>
+							</p>
+							<ul>
+								<li>Researched about the plight of the North Korean people</li>
+								<li>Wrote speeches advocating for North Korean Freedom and was chosen to speak in front of the White House</li>
+								<li>Talked to Congressmen and Congresswomen about the organization and our mission, advocating to them about laws and policies that they can implement</li>
+							</ul>
+						</div>
+
+					<h1>Skills & Interests</h1>
+						<div class="programming">
+							<h3>Programming</h3>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>jQuery</li>
+								<li>Bootstrap</li>
+								<li>Python</li>
+								<li>C++</li>
+							</ul>
+						</div>
+						<div class="design">
+							<h3>Graphic Design</h3>
+							<ul>
+								<li>Adobe Photoshop and Illustrator</li>
+								<li>Procreate</li>
+								<li>Canva</li>
+							</ul>
+						</div>
+						<div class="certification">
+							<h3>Certification</h3>
+							<ul>
+								<li>Google IT Professional Certification</li>
+								<li>2020, 2021, 2022 Otefe Scholarship Winner</li>
+								<li>2022 Kimbo Foundation Scholarship Winner</li>
+								<li>1st Place for National Korean Speech Contest</li>
+							</ul>
+						</div>
+
+						<div class="clearfloat"></div>
+
+				</div>
+
+			</section>
+			<section class="no-parallax">
+				<h1>Thank you!</h1>
+			</section>
+		</div>
+
+	</div>
+
+	<div id="footer">
+		<p>Chaerin Sung | 2022</p>
+	</div>
+</body>
+
+</html>

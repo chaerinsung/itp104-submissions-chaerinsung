@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="ITP104 Final Project Homepage">
+	<meta name="keywords" content="ITP104, student, USC, HTML, CSS, web design, web development, portfolio, resume">
+	<meta name="author" content="Chaerin Sung">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Chaerin Sung | Final Project</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		#header {
+			height: 100vh;
+			width: auto;
+		}
+		#content-wrapper {
+			height: 100vh;
+			width: auto;
+		}
+		.one {
+			height: 36em;
+			width: auto;
+			position: relative;
+			left: 13%;
+			top: 1.5%;
+		}
+		.two {
+			height: 43em;
+			width: auto;
+			position: relative;
+			left: 24%;
+			top: 9%;
+		}
+		#mosaic {
+			width: 51.21%;
+			margin: 0 auto;
+			line-height: 0;
+			position: relative;
+			bottom: -17%;
+			left: -25%;
+		}
+		#mosaic img {
+			width: 100%;
+		}
+		#mosaic article {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			background: white;
+			display: grid;
+			grid-template-columns: 1fr 1.5fr 1fr;
+			grid-gap: 25px;
+			mix-blend-mode: lighten;
+		}
+		#mosaic div {
+			background: black;
+			height: 20.15vw;
+		}
+		#mosaic div:nth-of-type(2) {
+			grid-column: 2 / 4;
+		}
+		#introduction {
+			width: 40%;
+			position: relative;
+			left: 55.5%;
+			bottom: 41%;
+			font-family: sans-serif;
+			font-size: 1.5em;
+		}
+		#introduction-one p {
+			margin: 0;
+		}
+		.name {
+			font-size: 2em;
+			padding-top: 0.1em;
+			font-weight: bolder;
+		}
+		#introduction-two a {
+			text-decoration: none;
+			color: #748b97;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="header">
+		<div id="nav-wrapper">
+			<div id="nav">
+				<ul>
+					<li><a href="contacts.html">CONTACTS</a></li>
+					<li><a href="projects.html">PROJECTS</a>
+						<ul>
+							<li><a href="moodboard.html">MOODBOARD</a></li>
+							<li><a href="lookbook.html">LOOKBOOK</a></li>
+						</ul>
+					</li>
+					<li><a href="resume.html">RESUME</a></li>
+					<li><a class="active" href="index.html">HOME</a></li>
+				</ul>
+				<div class="clearfloat"></div>
+			</div>
+		</div>
+
+		<div id="text">
+			<ul class="intro">
+				<li>Welcome.</li>
+				<li>Creator.</li>
+				<li>USC Student.</li>
+				<li>Web Developer.</li>
+				<li>Chaerin Sung.</li>
+			</ul>
+			<div class="clearfloat"></div>
+		</div>
+
+		<img class="one" src="img/cover.png" alt="Personal Photo">
+		<img class="two" src="img/personal.png" alt="Another Personal Photo">
+
+	</div>
+
+	<div id="content-wrapper">
+		<div id="mosaic">
+			<img src="img/beach.png" alt="Beach Photo">
+			<article>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+				<div></div>
+			</article>
+		</div>
+
+		<div id="introduction">
+			<div id="introduction-one">
+				<p>Hi, I'm</p>
+				<p class="name">CHAERIN SUNG</p>
+			</div>
+
+			<div id="introduction-two">
+				<p>I am a junior studying at the <a href="http://www.usc.edu" target="_blank">University of Southern California</a>. I am an aspiring website developer majoring in Cognitive Science and minoring in web development. My passions lie in fashion and design and you will most likely find me coding at a cafe. The first time I explored the field of website development I absolutely fell in love with how much creativity goes into the process. So, here I am.</p>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer">
+		<p>Chaerin Sung | 2022</p>
+	</div>
+</body>
+
+</html>

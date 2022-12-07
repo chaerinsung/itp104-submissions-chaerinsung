@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="ITP104 Final Project Projects">
+	<meta name="keywords" content="ITP104, student, USC, HTML, CSS, web design, web development, portfolio, resume">
+	<meta name="author" content="Chaerin Sung">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Chaerin Sung | Projects</title>
+
+	<link rel="stylesheet" href="styles.css">
+
+	<style>
+		@font-face {
+			font-family: "Signature";
+			src: url("fonts/Signature.ttf");
+		}
+		#content {
+			width: 70em;
+			height: auto;
+			margin: 0 auto;
+			text-align: center;
+			padding-top: 3.5%;
+		}
+		#images {
+			margin: 0 auto;
+			position: relative;
+			text-align: center;
+		}
+		.pic {
+			position: relative;
+			float: left;
+			width: 22em;
+			height: 25em;
+			padding: 0;
+			margin: 0.9%;
+		}
+		.photo {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+		#projects {
+			position: absolute;
+			text-align: center;
+			margin: 0 auto;
+			left: 37em;
+			top: 63%;
+		}
+		#projects h1 {
+			font-family: "Signature", sans-serif;
+			font-size: 8em;
+		}
+		.overlay {
+			background-color: rgba(0,0,0,.3);
+			color: white;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			text-align: center;
+			visibility: hidden;
+			line-height: 14em;
+			margin: 0 auto;
+			object-fit: cover;
+			font-family: sans-serif;
+			font-size: 1.5em;
+		}
+		.pic:hover .overlay {
+			visibility: visible;
+		}
+		.pic a {
+			color: white;
+			font-weight: lighter;
+		}
+		.blur {
+			opacity: 65%;
+		}
+		.pic:hover .blur {
+			opacity: 100%;
+		}
+
+	</style>
+</head>
+
+<body>
+	<div id="nav-wrapper">
+		<div id="nav">
+			<ul>
+				<li><a href="contacts.html">CONTACTS</a></li>
+				<li><a class="active" href="projects.html">PROJECTS</a>
+					<ul>
+						<li><a href="moodboard.html">MOODBOARD</a></li>
+						<li><a href="lookbook.html">LOOKBOOK</a></li>
+					</ul>
+				</li>
+				<li><a href="resume.html">RESUME</a></li>
+				<li><a href="index.html">HOME</a></li>
+			</ul>
+			<div class="clearfloat"></div>
+		</div>
+	</div>
+
+	<div id="content">
+		<div id="images">
+		
+			<div class="pic">
+				<img class="photo" src="img/beach.jpeg" alt="Beach">
+			</div>
+			<div class="pic">
+				<img class="photo" src="img/books.jpeg" alt="Books">
+			</div>
+			<div class="pic">
+				<img class="photo" src="img/cozy.jpeg" alt="Cozy">
+			</div>
+			<div class="pic">
+				<img class="photo blur" src="img/flowers.jpeg" alt="Flowers">
+				<div class="overlay">
+					<a href="moodboard.html" target="_blank"><p>MOODBOARD</p></a>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="photo" src="img/white.jpeg" alt="White">
+			</div>
+			<div class="pic">
+				<img class="photo blur" src="img/freud.jpeg" alt="Freud">
+				<div class="overlay">
+					<a href="lookbook.html" target="_blank"><p>LOOKBOOK</p></a>
+				</div>
+			</div>
+			<div class="pic">
+				<img class="photo" src="img/heart.jpeg" alt="Heart">
+			</div>
+			<div class="pic">
+				<img class="photo" src="img/vogue.jpeg" alt="Vogue">
+			</div>
+			<div class="pic">
+				<img class="photo" src="img/wardrobe.jpeg" alt="Wardrobe">
+			</div>
+		</div>
+		<div id="projects">
+			<h1>Projects</h1>
+		</div>
+		<div class="clearfloat"></div>
+	</div>
+
+	<div id="footer">
+		<p>Chaerin Sung | 2022</p>
+	</div>
+
+
+</body>
+
+</html>
